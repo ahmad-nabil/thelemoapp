@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#FFDD3A"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgFruit"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/apple"
+            tools:srcCompat="@drawable/apple" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/name_fruitTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundedcorner_textview"
+        android:capitalize="sentences"
+        android:fontFamily="@font/sensi_demo"
+        android:gravity="center|top"
+        android:paddingBottom="10dp"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textColor="#1E4A55"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:circularflow_radiusInDP="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/AddAndRemove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <RadioGroup
+        android:id="@+id/AddAndRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_fruitTv">
+
+        <RadioButton
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:button="@drawable/baseline_add_circle_24"
+            android:theme="@style/RadioButtonColor"/>
+
+        <RadioButton
+            android:id="@+id/removeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:button="@drawable/baseline_remove_circle_24"
+            android:theme="@style/RadioButtonColor"/>
+
+        <TextView
+            android:id="@+id/pricetotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:gravity="center"
+            android:text="5 JOD"
+            android:textColor="#1E4A55"
+            android:textSize="16sp" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

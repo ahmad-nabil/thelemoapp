@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center|center_vertical"
+        app:cardBackgroundColor="#1ACBCC"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/text_type_fruit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="center|center_horizontal"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="26sp"
+                tools:layout_editor_absoluteX="198dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+            <ImageView
+                android:id="@+id/logo_type_fruit"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/text_type_fruit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                app:srcCompat="@drawable/apple"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="172dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

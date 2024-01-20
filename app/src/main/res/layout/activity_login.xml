@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-55dp"
+    android:layout_marginBottom="-100dp"
+    android:background="@drawable/baackgroundlogin"
+    tools:context=".login">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lemomalllogo_login" />
+
+    <EditText
+        android:id="@+id/email_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:ems="12"
+        android:fontFamily="@font/quicksand"
+        android:gravity="center"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:scaleX=".8"
+        android:scaleY=".8"
+        android:textColorHint="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/password_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="12"
+        android:fontFamily="@font/quicksand"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:scaleX=".8"
+        android:scaleY=".8"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/email_login"
+        app:layout_constraintStart_toStartOf="@+id/email_login"
+        app:layout_constraintTop_toBottomOf="@+id/email_login" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        style="@style/Widget.Material3.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:rotationY="180"
+        app:icon="@drawable/back_btn"
+        app:iconPadding="20dp"
+        app:iconSize="60dp"
+        app:iconTint="#000000"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/signupBTN"
+        app:layout_constraintStart_toStartOf="@+id/signupBTN"
+        app:layout_constraintTop_toBottomOf="@+id/signupBTN" />
+
+    <Button
+        android:id="@+id/forgetpassBtn"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/quicksand"
+        android:text="forget pasword?"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/password_login"
+        app:layout_constraintStart_toStartOf="@+id/password_login"
+        app:layout_constraintTop_toBottomOf="@+id/password_login" />
+
+    <Button
+        android:id="@+id/signupBTN"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand"
+        android:text="Don't have an account? join US Here"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/forgetpassBtn"
+        app:layout_constraintStart_toStartOf="@+id/forgetpassBtn"
+        app:layout_constraintTop_toBottomOf="@+id/forgetpassBtn" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand"
+        android:text="2021.Clever Mind Pop Ict"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.86" />
+</androidx.constraintlayout.widget.ConstraintLayout>

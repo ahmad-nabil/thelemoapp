@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TheLemoApp"
+        tools:targetApi="33">
+        <activity
+            android:name=".splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            >
+        </activity>
+        <activity
+            android:name=".winter_fruit"
+        >
+        </activity>
+        <activity
+            android:name=".newfruit"
+            >
+
+        </activity>
+        <activity
+            android:name=".summer_fruit"
+            >
+
+        </activity>
+        <activity
+        android:name=".green_fruit"
+        >
+
+    </activity>
+        <activity
+            android:name=".orders"
+            >
+
+        </activity>
+        <activity
+            android:name=".ThanksForOrders"
+            >
+
+        </activity>
+        <activity
+            android:name=".baskets"
+            >
+
+        </activity>
+        <activity
+            android:name=".login"
+            >
+
+        </activity>
+        <activity
+            android:name=".signup"
+            >
+
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

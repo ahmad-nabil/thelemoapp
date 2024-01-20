@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-120dp"
+    android:layout_marginBottom="-120dp"
+    android:background="@drawable/backgroundmain"
+    tools:context=".account">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="ACCOUNT"
+        android:textColor="#1E4A55"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintStart_toEndOf="@+id/backbtn_accountlayout"
+        app:layout_constraintTop_toTopOf="@+id/backbtn_accountlayout"
+        app:layout_constraintVertical_bias="0.633" />
+
+    <Button
+        android:id="@+id/menubtn_accountlayout"
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="90"
+        android:rotationY="2"
+        app:icon="@drawable/menu"
+        app:iconGravity="textTop"
+        app:iconSize="40dp"
+        app:iconTint="#FFFFFF"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backbtn_accountlayout" />
+
+    <Button
+        android:id="@+id/backbtn_accountlayout"
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/back_btn"
+        app:iconSize="40dp"
+        app:iconTint="#FFFFFF"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline16"
+        app:srcCompat="@drawable/thelemomall" />
+
+    <EditText
+        android:id="@+id/fullname_accountlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/quicksand_bold"
+        android:gravity="center"
+        android:inputType="text"
+        android:textColor="#1E4A55"
+        android:textColorHint="#1E4A55"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/phone_accountlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/quicksand_bold"
+        android:gravity="center"
+        android:inputType="phone"
+        android:textColorHint="#1E4A55"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/fullname_accountlayout"
+        app:layout_constraintStart_toStartOf="@+id/fullname_accountlayout"
+        app:layout_constraintTop_toBottomOf="@+id/fullname_accountlayout" />
+
+    <EditText
+        android:id="@+id/Email_accountlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/quicksand_bold"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#1E4A55"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/phone_accountlayout"
+        app:layout_constraintStart_toStartOf="@+id/phone_accountlayout"
+        app:layout_constraintTop_toBottomOf="@+id/phone_accountlayout" />
+
+    <EditText
+        android:id="@+id/password_accountlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/quicksand_bold"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:textColor="#1E4A55"
+        android:textColorHint="#1E4A55"
+        android:textColorLink="#1E4A55"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/Email_accountlayout"
+        app:layout_constraintStart_toStartOf="@+id/Email_accountlayout"
+        app:layout_constraintTop_toBottomOf="@+id/Email_accountlayout" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/password_accountlayout"
+        app:layout_constraintStart_toStartOf="@+id/password_accountlayout"
+        app:layout_constraintTop_toBottomOf="@+id/password_accountlayout">
+
+        <RadioButton
+            android:id="@+id/CashRadioBtn_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="CASH"
+
+            android:textColor="#1E4A55"
+            android:textSize="20sp"
+            android:theme="@style/RadioButtonColor" />
+
+        <RadioButton
+            android:id="@+id/VisaRadioBtn_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="VISA"
+
+            android:textColor="#1E4A55"
+            android:textSize="20sp"
+            android:theme="@style/RadioButtonColor" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/saveBtn"
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="save"
+        android:textAlignment="center"
+        android:textColor="#1E4A55"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:icon="@drawable/save"
+        app:iconSize="50dp"
+        app:iconTint="#FFFFFF"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toTopOf="@+id/guideline27"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup2"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <FrameLayout
+        android:id="@+id/Frame_accountlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8099027" />
+</androidx.constraintlayout.widget.ConstraintLayout>
